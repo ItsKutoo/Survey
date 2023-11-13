@@ -5,139 +5,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
 </head>
-<body>
+ <body>
    
-    <section class="s1">
-     <div class="main-container">
-        <div class="greeting-wrapper">
-        <h1 id="title">Survey Form For Feedback.</h1>
-        </div>
-          <div class="intro-wrapper">
-           <div class="nav-wrapper">
-         </div>
-        </div>
-       
-        <ul id="navigation">
-            <li><a target="_blank" href="#">Contact</a></li>
-        </ul>
-     </div>
-    </section>
-   
-    <section class="s2">
-         <div class="main-container">
-             <h2>Text</h2>
-            <form id="survey-form">
-              <div class="form-control">
-               <label for="name" id="label-name">
-                  Name
-               </label>
-               <input type="text" id="name" placeholder="Enter your name">
-           </div>
-           <div class="form-control">
-               <label for="email" id="label-email">
-                    Email
-               </label>
-               <input type="email" id="email" placeholder="Enter your email">
-            </div>
-           
-            <div class="form-control">
-                <label for="age" id="label-age">
-                  Age
-                </label>
-                <input type="number" id="age" placeholder="Enter your age" />
-            </div>
-          </div>
-             </form>
-            </div>
-      </section>
-     
-      <section class="s3">
-          <div class="form-control">
-          <label for="role" id="lebel-role">
-           Firstly, Which option best describes you?
-          </label>
-          <select name="role" id="role">
-            <option value="student">Student</option>
-            <option value="intern">Intern</option>
-            <option value="professional">professional</option>
-            <option value="other">Other</option>
-          </select>
-          </div>
-      </section>
-      
-      <section class="s4">
-        <div class="form-control">
-            <label>What's your favourite part about Web Development?</label>
-            <br>
-            <label for="inp-1">
-              <input type="checkbox" name="inp">Coding in itself</input>
-            </label>
-            <br>
-            <label for="inp-2">
-              <input type="checkbox" name="inp">The learning experiences</input>
-            </label>
-            <br>
-            <label for="inp-3">
-              <input type="checkbox" name="inp">The community</input>
-            </label>
-            <br>
-            <label for="inp-4">
-              <input type="checkbox" name="inp">Finding out the broken code I've been stuck on for hours</input>
-            </label>
-            <label for="inp-5">
-                <input type="checkbox" name="inp">Just my hobby</input>
-              </label>
-              <label for="inp-6">
-                <input type="checkbox" name="inp">Its fun</input>
-              </label>
-              <textarea class="input-field" type="text" name="message" placeholder="If other describe here..."></textarea>
-            </div>
-      </section>
-     
-      <section class="s5">
-        <div class="main-container">
-        <h3>Contact me if you have any questions.</h3>
-        <form id="contact-form">
-            <label>Name</label>
-            <input class="input-field" type="text" name="name">
-
-            <label>Subject</label>
-            <input class="input-field" type="text" name="subject">
-
-            <label>Email</label>
-            <input id="email" class="input-field" type="text" name="email">
-
-            <label>Message</label>
-            <textarea class="input-field" type="text" name="message"></textarea>
-            
-            <input id="submit-btn" type="submit" value="send">
-            
-            <div class="form-control">
-                <label for="comment">
-                  Any comments or suggestions?
-                </label>
-                <textarea name="comment" id="comment" placeholder="Enter your comment here">
-                </textarea>
-            </div>
-            
-            <button type="reset" value="reset" id="reset">
-                Reset
-            </button>
+  <div id="page-container">
+     <header id="form-header">
+        <h1 id="form-title">Web<span>Dev</span></h1>
+        <p id="form-description">Survey based on webdev.</p>
+     </header>
+    
+     <main>
+      <section id="survey-form">
+        <form>
           
-            <button type="submit" value="submit" id="submit">
-                Submit
-            </button>
-        
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="enter your name">
+          </div>
+
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input id="age" type="number" min="13" max="100" placeholder="enter your age">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="enter your email">
+          </div>
+
+          <div class="form-group">
+             <label for="role" id="label-role">
+                Which option best describes you?
+             </label>
+            <select name="role" id="role">
+               <option value="student">Student</option>
+               <option value="intern">Intern</option>
+               <option value="professional">professional</option>
+               <option value="other">Other</option>
+            </select>
+           </div>
+          
+           <div class="form-group">
+            <label>What's your favourite part about Web Development?</label>
+            <div class="checkbox-group">
+              <input id="box-1" type="checkbox">
+              <label for="box-1">The coding itself</label>
+            </div>
+         
+            <div class="checkbox-group">
+              <input id="box-2" type="checkbox">
+              <label for="box-2">The community</label>
+            </div>
+
+            <div class="checkbox-group">
+              <input id="box-3" type="checkbox">
+              <label for="box-3">It's fun</label>
+            </div>
+
+            <div class="checkbox-group">
+              <input id="box-4" type="checkbox">
+              <label for="box-4">When I crack a code I've been trying to get for days</label>
+            </div>
+
+            <div class="checkbox-group">
+              <input id="box-5" type="checkbox">
+              <label for="box-5">It's a hobby</label>
+            </div>
+
+            <div class="checkbox-group">
+              <input id="box-6" type="checkbox">
+              <label for="box-6">Other</label>
+            </div>
+
+          </div>
+          
+       
         </form>
-        </div>
-     
-    </section>
+     </section>
+    </main>
+   </div>
   </body>
 </html>
+        
+  
