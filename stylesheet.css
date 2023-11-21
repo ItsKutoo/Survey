@@ -1,4 +1,27 @@
+/*Reset Css Rules*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html{
+    font-size: 16px;
+}
+
+body{
+    background-image: url(surveyback.jpeg);
+    color: white;
+    padding: 30px 100px;
+}
+
+#page-container{
+  background-color: rgba(138, 43, 226, 0.3);
+}
+
+#form-header{
+    text-align: center;
+}
 #submit-btn{
     margin: auto;
     width: 20%;
